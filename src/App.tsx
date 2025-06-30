@@ -1,10 +1,11 @@
-import { Button } from "./components/ui/button";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <div>
-      <h1>Hello Frontend Template!</h1>
-      <Button>Click Me</Button>
+      <div>Navbar</div>
+      <Outlet />
+      <div>Footer</div>
     </div>
   );
 }
