@@ -5,7 +5,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "my-react-app",
-	"main": "worker/index.ts",
+	// "main": "sr/index.ts",
 	"compatibility_date": "2025-06-28",
 	"assets": {
 		"not_found_handling": "single-page-application"
