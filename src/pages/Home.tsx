@@ -5,7 +5,7 @@ import { useGetPokemonByNameQuery } from "@/services/pokemon";
 const Home = () => {
     // Using a query hook automatically fetches data and returns query values
     const { data, error, isLoading } = useGetPokemonByNameQuery('bulbasaur')
-
+    console.log(data);
     return (
         <div className="flex flex-col items-center justify-center min-h-[60vh] space-y-6">
             <h1 className="text-3xl font-bold mb-2">Welcome to the Home Page</h1>
@@ -30,7 +30,7 @@ const Home = () => {
                 <>
                   <h3 className="text-xl font-bold capitalize mb-2">{data.name}</h3>
                   <img
-                    src={(data as unknown)?.sprites?.front_shiny}
+                    src={data?.sprites?.front_shiny}
                     alt={data.name}
                     className="w-24 h-24 object-contain mb-2"
                   />
