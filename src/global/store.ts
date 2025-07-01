@@ -10,7 +10,9 @@ export const store = configureStore({
   // Adding the api middleware enables caching, invalidation, polling,
   // and other useful features of `rtk-query`.
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(pokemonApi.middleware),
+    getDefaultMiddleware({
+        serializableCheck: false,
+    }).concat(pokemonApi.middleware),
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
