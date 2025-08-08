@@ -1,10 +1,10 @@
-import type { RootState } from '@/global/store'
-import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment } from '@/global/slices/counterSlice'
+import type { RootState } from '@/redux/store'
+import { decrement, increment } from '@/redux/slices/counterSlice'
+import { useAppDispatch, useAppSelector } from '@/redux/hook'
 
 export function Counter() {
-  const count = useSelector((state: RootState) => state.counter.value)
-  const dispatch = useDispatch()
+  const count = useAppSelector((state: RootState) => state.counter.value)
+  const dispatch = useAppDispatch()
 
   return (
     <div className="flex flex-col items-center space-y-4">
