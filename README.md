@@ -67,7 +67,7 @@ pnpm deploy
 
 ## 📦 Folder Structure
 
-```
+```sh
 ├── components.json
 ├── eslint.config.js
 ├── index.html
@@ -80,13 +80,17 @@ pnpm deploy
 │   ├── App.tsx
 │   ├── assets
 │   ├── components
-│   ├── global
+│   ├── config
+│   ├── constants
 │   ├── hooks
 │   ├── index.css
+│   ├── layout
 │   ├── lib
 │   ├── main.tsx
+│   ├── modules
 │   ├── pages
 │   ├── providers
+│   ├── redux
 │   ├── router
 │   ├── services
 │   └── vite-env.d.ts
